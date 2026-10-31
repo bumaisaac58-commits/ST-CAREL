@@ -11,7 +11,7 @@ A modern, responsive, web-based school management system designed to simplify sc
 
 1. Application Overview
 
-The St Carels Academy School Management System is built as a single-page web application.
+The St Carel Academy School Management System is built as a single-page web application.
 
 The HTML, CSS and JavaScript are combined into one main file called "index.html".
 
