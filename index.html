@@ -413,5 +413,14 @@ if(window.supabase?.createClient&&!SUPABASE_URL.includes("YOUR_SUPABASE")&&!SUPA
  $("setupNotice").style.background="#fff7e6";$("setupNotice").style.borderColor="#f5d48c";
 }
 </script>
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("./sw.js")
+      .then(() => console.log("App ready for offline use"))
+      .catch(error => console.error("Service worker error:", error));
+  });
+}
+</script>
 </body>
 </html>
